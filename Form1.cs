@@ -15,14 +15,29 @@ using System.Reflection;
 using System.Management;
 using System.Linq;
 
+/// <summary>
+/// CP2102 JY-61 MPU6050 IMU
+/// </summary>
 namespace MiniIMU
 {
+    /// <summary>
+    /// IMU UI
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initialize IMU UI Form
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// 更新COM Port
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RefreshComPort(object sender, EventArgs e)
         {
             toolStripComSet.DropDownItems.Clear();
